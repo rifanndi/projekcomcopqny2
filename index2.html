@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata dasar -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home | Axial Construct</title>
+
+    <!-- Memuat stylesheet utama -->
+    <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+    <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+    <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/index.min.css" />
+  </head>
+  <body>
+    <!-- Header situs -->
+    <header class="header" data-page="home" data-page-parent="home">
+      <div class="container d-flex">
+        <!-- Logo dan brand name -->
+        <a class="brand" href="index.html">
+          <img class="brand_logo" src="svg/logo.svg" alt="Axial Construct" />
+          <span class="brand_name">
+            Axial <span class="highlight">Construct</span>
+          </span>
+        </a>
+
+        <!-- Navigasi utama dengan dropdown untuk sub-menu -->
+        <nav class="header_nav collapse" id="headerMenu">
+          <ul class="header_nav-list">
+            <!-- Contoh item dropdown untuk halaman utama -->
+            <li class="header_nav-list_item dropdown">
+              <a
+                class="nav-link nav-item dropdown-toggle"
+                href="index.html"
+                data-bs-toggle="collapse"
+                data-bs-target="#homeMenu"
+                aria-expanded="false"
+              >
+                <span class="nav-item_text"> Home </span>
+                <span class="icon icon-chevron_right"></span>
+              </a>
+              <div class="dropdown-menu collapse" id="homeMenu">
+                <ul class="dropdown-list">
+                  <li class="list-item">
+                    <a class="dropdown-item nav-item" href="index.html"
+                      >Home 1</a
+                    >
+                  </li>
+                  <li class="list-item">
+                    <a class="dropdown-item nav-item" href="index2.html"
+                      >Home 2</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- Navigasi lainnya seperti About, Services, Projects, dll. -->
+            <!-- ... (skipping other items for brevity) -->
+          </ul>
+        </nav>
+        <!-- Tombol untuk membuka menu pada tampilan mobile -->
+        <button
+          class="header_trigger"
+          data-bs-toggle="collapse"
+          data-bs-target="#headerMenu"
+        >
+          <span class="line line--short"></span>
+          <span class="line"></span>
+          <span class="line line--short"></span>
+          <span class="line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Konten utama halaman home -->
+    <main>
+      <!-- Section Hero - Tampilan awal halaman dengan informasi utama -->
+      <section class="hero primary-bg">
+        <!-- Elemen dekoratif -->
+        <div class="hero_deco">
+          <picture
+            ><img
+              class="lazy"
+              data-src="img/placeholder.jpg"
+              src="img/placeholder.jpg"
+              alt="media"
+          /></picture>
+        </div>
+        <div class="container">
+          <!-- Teks dan deskripsi hero -->
+          <div class="hero_header section_header">
+            <span class="subtitle subtitle--extended"
+              >Professional. Innovative. Reliable.</span
+            >
+            <h1 class="title">Exceptional Service Exceeding Expectations</h1>
+            <p class="text">
+              Our civil and structural team is committed to providing
+              sustainable, creative & efficient engineering solutions for our
+              communities
+            </p>
+            <a class="btn" href="#">Consult now</a>
+          </div>
+          <!-- Statistik utama -->
+          <div class="hero_main">
+            <div class="numbers">
+              <div class="numbers_group">
+                <h2 class="countNum number" data-suffix="+" data-value="128">
+                  0
+                </h2>
+                <span class="label">Projects / Year</span>
+              </div>
+              <div class="numbers_group">
+                <h2
+                  class="countNum number"
+                  data-separator="."
+                  data-value="4253"
+                >
+                  0
+                </h2>
+                <span class="label">Million euros<br />turnover in 2020</span>
+              </div>
+            </div>
+            <!-- Kartu proyek contoh -->
+            <div class="card" data-aos="fade-right">
+              <span class="card_underlay"></span>
+              <div class="wrapper">
+                <h3 class="title">Residential House</h3>
+                <span class="square highlight">78 000 м <sup>2</sup></span>
+                <span class="info">Amount work done</span>
+                <a class="link link-arrow" href="#"
+                  >Details <i class="icon-arrow_right icon"></i
+                ></a>
+              </div>
+              <picture
+                ><img
+                  class="lazy"
+                  data-src="img/placeholder.jpg"
+                  src="img/placeholder.jpg"
+                  alt="media"
+              /></picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Services - Menampilkan layanan yang ditawarkan -->
+      <section class="services section">
+        <div class="container">
+          <div class="services_header section_header">
+            <span class="subtitle">What we do</span>
+            <h2 class="title">
+              Multi-Disciplined Engineering
+              <span class="highlight">Solutions</span>
+            </h2>
+          </div>
+          <ul class="services_list">
+            <!-- Contoh layanan individual -->
+            <li class="services_list-item">
+              <div class="wrapper">
+                <span class="number">01</span>
+                <h4 class="title">Process Engineering</h4>
+                <p class="description">Senectus et netus...</p>
+                <a class="link link-arrow" href="single-service.html"
+                  >Details <i class="icon-arrow_right icon"></i
+                ></a>
+              </div>
+            </li>
+            <!-- Layanan lainnya ... -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section Projects - Menampilkan proyek-proyek perusahaan -->
+      <section class="projects primary-bg section">
+        <div class="container">
+          <div class="projects_header section_header">
+            <span class="subtitle">What we do</span>
+            <h2 class="title">Our <span class="highlight">Projects</span></h2>
+          </div>
+          <ul class="projects_list">
+            <!-- Contoh item proyek -->
+            <li class="projects_list-item">
+              <div class="media">
+                <img
+                  class="lazy"
+                  data-src="img/placeholder.jpg"
+                  src="img/placeholder.jpg"
+                  alt="Jazzy Elite Construction Shopping Center"
+                />
+              </div>
+              <div class="main">
+                <h3 class="main_title">Jazzy Elite Construction Shopping</h3>
+                <span class="location"
+                  ><i class="icon-location icon"></i> 100 Sunrise Ct Hamel,
+                  Minnesota</span
+                ><a
+                  class="link link-arrow link-arrow--alt"
+                  href="single-project.html"
+                  >Details <i class="icon-arrow_right icon"></i
+                ></a>
+              </div>
+            </li>
+            <!-- Proyek lainnya ... -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section lainnya untuk Spots, Features, Team, FAQ, Blog, dll. -->
+      <!-- ... (omitted for brevity) -->
+
+      <!-- Section Contact - Menampilkan form kontak -->
+      <section class="contact section">
+        <div class="container">
+          <div class="contact_form">
+            <div class="contact_form-header section_header">
+              <span class="subtitle">Contact us</span>
+              <h2 class="title">
+                Do You Have any <span class="highlight">Questions?</span>
+              </h2>
+            </div>
+            <!-- Form untuk pengiriman pesan -->
+            <form
+              action="form.php"
+              class="contact_form-form contact-form d-flex flex-wrap justify-content-between"
+              method="POST"
+              name="feedbackForm"
+              data-type="feedback"
+            >
+              <input
+                class="contact-form_field contact-form_field--half field required"
+                name="feedbackName"
+                type="text"
+                placeholder="Full name"
+              />
+              <input
+                class="contact-form_field contact-form_field--half field required"
+                data-type="tel"
+                type="text"
+                name="feedbackTel"
+                placeholder="Phone"
+              />
+              <input
+                class="contact-form_field field required"
+                data-type="email"
+                type="text"
+                name="feedbackEmail"
+                placeholder="Email Address"
+              />
+              <textarea
+                class="contact-form_field field required"
+                data-type="message"
+                name="feedbackMessage"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit" class="contact-form_btn btn">
+                Send message
+              </button>
+            </form>
+          </div>
+          <!-- Informasi kontak perusahaan -->
+          <div class="contact_info">
+            <h3 class="contact_info-header">
+              Are You Going to Implement Project?
+            </h3>
+            <ul class="contact-info">
+              <li class="contact-info_group">
+                <span class="name">Address</span
+                ><span class="content"
+                  >2047 Cyrus Viaduct East Jadynchester</span
+                >
+              </li>
+              <li class="contact-info_group">
+                <span class="name">Email</span
+                ><span class="content"
+                  ><a href="mailto:example.com">info@construct.com</a
+                  ><a href="mailto:example.com">support@construct.com</a></span
+                >
+              </li>
+              <li class="contact-info_group">
+                <span class="name">Phone</span
+                ><span class="content"
+                  ><a href="tel:+13136453395">1 - 313 - 645 - 3395</a
+                  ><a href="tel:+14699702609">1 - 469 - 970 - 2609</a></span
+                >
+              </li>
+            </ul>
+            <!-- Ikon media sosial -->
+            <ul class="socials">
+              <li class="socials_item">
+                <a class="socials_item-link" href="#" aria-label="Facebook"
+                  ><i class="icon-facebook"></i
+                ></a>
+              </li>
+              <li class="socials_item">
+                <a class="socials_item-link" href="#" aria-label="Instagram"
+                  ><i class="icon-instagram"></i
+                ></a>
+              </li>
+              <li class="socials_item">
+                <a class="socials_item-link" href="#" aria-label="Twitter"
+                  ><i class="icon-twitter"></i
+                ></a>
+              </li>
+              <li class="socials_item">
+                <a class="socials_item-link" href="#" aria-label="WhatsApp"
+                  ><i class="icon-whatsapp"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer - Bagian bawah halaman yang menampilkan informasi dan navigasi tambahan -->
+    <footer class="footer primary-bg">
+      <div class="container">
+        <div class="footer_main">
+          <!-- Informasi Brand di Footer -->
+          <div class="footer_main-block">
+            <a class="brand" href="index.html">
+              <img
+                class="brand_logo"
+                src="svg/logo.svg"
+                alt="Axial Construct"
+              />
+              <span class="brand_name"
+                >Axial <span class="highlight">Construct</span></span
+              >
+            </a>
+            <p
+              class="footer_main-block_subtitle footer_main-block_subtitle--brand"
+            >
+              Libero volutpat sed cras ornare arcu dui vivamus. Ac tortor
+              dignissim convallis aenean et tortor at risus viverra
+            </p>
+          </div>
+          <!-- Informasi kontak di Footer -->
+          <div class="footer_main-block">
+            <h4 class="footer_main-block_title">Contacts</h4>
+            <div class="group-wrapper">
+              <i class="icon-call icon"></i>
+              <div class="group">
+                <a href="tel:+13136453395">1 - 313 - 645 - 3395</a
+                ><a href="tel:+14699702609">1 - 469 - 970 - 2609</a>
+              </div>
+            </div>
+            <div class="group-wrapper">
+              <i class="icon-location icon"></i>
+              <div class="group">
+                <span>2047 Cyrus Viaduct</span><span>East Jadynchester</span>
+              </div>
+            </div>
+          </div>
+          <!-- Link ke halaman perusahaan di Footer -->
+          <div class="footer_main-block">
+            <h4 class="footer_main-block_title">Company</h4>
+            <ul class="footer_main-block_nav">
+              <li class="list-item">
+                <a class="nav-link link" href="about.html"
+                  ><i class="icon-chevron_right icon"></i> About</a
+                >
+              </li>
+              <li class="list-item">
+                <a class="nav-link link" href="services.html"
+                  ><i class="icon-chevron_right icon"></i> Services</a
+                >
+              </li>
+              <li class="list-item">
+                <a class="nav-link link" href="projects.html"
+                  ><i class="icon-chevron_right icon"></i> Projects</a
+                >
+              </li>
+              <li class="list-item">
+                <a class="nav-link link" href="blog.html"
+                  ><i class="icon-chevron_right icon"></i> Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Form berlangganan newsletter di Footer -->
+          <div class="footer_main-block">
+            <h4 class="footer_main-block_title">Subscribe to Our News</h4>
+            <p
+              class="footer_main-block_subtitle footer_main-block_subtitle--newsletter"
+            >
+              Find out about the last days and the latest promotions of our
+              Corporation
+            </p>
+            <form
+              class="footer_main-block_form"
+              action="#"
+              method="POST"
+              name="newsletterForm"
+            >
+              <input
+                class="field required"
+                name="newsletterEmail"
+                type="text"
+                placeholder="Email"
+              />
+              <button
+                class="btn btn--submit btn--static"
+                type="submit"
+                aria-label="Subscribe"
+              >
+                <span class="text">Subscribe</span
+                ><i class="icon-paperplane icon"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Informasi hak cipta dan ikon media sosial -->
+        <div class="footer_secondary">
+          <p class="footer_secondary-copyright">
+            <span>Merkulove &copy; Axial Construct Template</span>
+            <span
+              >All rights reserved Copyrights <span id="currentYear"></span
+            ></span>
+          </p>
+          <ul class="socials">
+            <li class="socials_item">
+              <a class="socials_item-link" href="#" aria-label="Facebook"
+                ><i class="icon-facebook"></i
+              ></a>
+            </li>
+            <li class="socials_item">
+              <a class="socials_item-link" href="#" aria-label="Instagram"
+                ><i class="icon-instagram"></i
+              ></a>
+            </li>
+            <li class="socials_item">
+              <a class="socials_item-link" href="#" aria-label="Twitter"
+                ><i class="icon-twitter"></i
+              ></a>
+            </li>
+            <li class="socials_item">
+              <a class="socials_item-link" href="#" aria-label="WhatsApp"
+                ><i class="icon-whatsapp"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Tombol untuk kembali ke atas -->
+    <button id="scrollTrigger" type="button">
+      <i class="icon icon-arrow_right"></i>
+    </button>
+
+    <!-- Script untuk Youtube API dan JavaScript situs -->
+    <script
+      id="www-widgetapi-script"
+      src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflS50iB-/www-widgetapi.js"
+      async=""
+    ></script>
+    <script src="https://www.youtube.com/player_api"></script>
+    <script src="js/common.min.js"></script>
+    <script src="js/index.min.js"></script>
+  </body>
+</html>
